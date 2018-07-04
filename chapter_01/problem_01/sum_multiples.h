@@ -1,6 +1,7 @@
 #ifndef CPPCHALLENGER_SUM_MULTIPLES_H
 #define CPPCHALLENGER_SUM_MULTIPLES_H
 
+#include <numeric>
 #include <boost/range/irange.hpp>
 
 unsigned long sum_multiples_of_3_and_5(auto max_number)
