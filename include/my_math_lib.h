@@ -22,15 +22,15 @@ int greatest_common_divisor(int num_1, int num_2)
     return greatest_common_divisor(num_2, num_1 % num_2);
 }
 
-int least_common_multiple(std::vector<int> numbers)
-{
-    //Note (a*b)/GCD(a,b)
-    return 0;
-}
-
-auto least_common_multiple(auto num_1, auto num_2)
+int lcm(int num_1, int num_2)
 {
     return (num_1 * num_2) / greatest_common_divisor(num_1, num_2);
 }
+
+int least_common_multiple(std::vector<int> numbers)
+{
+    return std::accumulate(numbers.begin(), numbers.end(), 1, lcm);
+}
+
 
 #endif //MY_MATH_LIB_H_
