@@ -1,5 +1,5 @@
 #include <iostream>
-#include "sum_multiples.h"
+#include "my_math_lib.h"
 
 int main()
 {

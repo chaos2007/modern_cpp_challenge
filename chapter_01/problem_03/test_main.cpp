@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
-#include "least_common_multiple.h"
+#include "my_math_lib.h"
 
 TEST_CASE( "least_common_multiple works", "[lcm]" ) {
     REQUIRE( least_common_multiple(std::vector<int>{2, 3}) == 6);

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "greatest_common_divisor.h"
+#include "my_math_lib.h"
 
 int main()
 {

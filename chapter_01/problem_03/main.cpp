@@ -1,5 +1,5 @@
 #include <iostream>
-#include "least_common_multiple.h"
+#include "my_math_lib.h"
 
 int main()
 {
