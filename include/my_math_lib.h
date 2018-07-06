@@ -32,5 +32,31 @@ int least_common_multiple(std::vector<int> numbers)
     return std::accumulate(numbers.begin(), numbers.end(), 1, lcm);
 }
 
+bool is_prime(int number)
+{
+    if(number >= 1 and number <= 3)
+    {
+        return true;
+    }
+    for( int current = 2; current * current <= number; current++) {
+        if (number % current == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+int largest_prime_below(int number)
+{
+    for( int current = number - 1; current > 0; current--)
+    {
+        if( is_prime(current) )
+        {
+            return current;
+        }
+    }
+    return 0;
+}
 
 #endif //MY_MATH_LIB_H_
