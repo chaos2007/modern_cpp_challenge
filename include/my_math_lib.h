@@ -2,6 +2,7 @@
 #define MY_MATH_LIB_H_
 
 #include <numeric>
+#include <vector>
 #include <boost/range/irange.hpp>
 
 unsigned long sum_multiples_of_3_and_5(auto max_number)
