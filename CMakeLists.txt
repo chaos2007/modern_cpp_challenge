@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.7.0)
+cmake_minimum_required(VERSION 3.5.0)
 project(cppchallenger)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1z -fexceptions -g -Wall")
@@ -12,3 +12,4 @@ add_subdirectory(chapter_01/problem_01)
 add_subdirectory(chapter_01/problem_02)
 add_subdirectory(chapter_01/problem_03)
 add_subdirectory(chapter_01/problem_04)
+add_subdirectory(chapter_01/problem_06)
