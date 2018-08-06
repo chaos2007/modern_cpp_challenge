@@ -3,6 +3,7 @@
 
 #include <numeric>
 #include <vector>
+#include <list>
 #include <boost/range/irange.hpp>
 
 unsigned long sum_multiples_of_3_and_5(auto max_number)
@@ -58,6 +59,19 @@ int largest_prime_below(int number)
         }
     }
     return 0;
+}
+
+std::list<std::pair<int, int> > get_sexy_prime(int limit)
+{
+    std::list<std::pair<int, int> > result;
+    for(auto number = 2; number+6 < limit; number++)
+    {
+        if(is_prime(number) && is_prime(number+6))
+        {
+            result.push_back(std::make_pair(number, number+6));
+        }
+    }
+    return result;
 }
 
 #endif //MY_MATH_LIB_H_

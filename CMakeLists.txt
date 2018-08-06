@@ -12,4 +12,6 @@ add_subdirectory(chapter_01/problem_01)
 add_subdirectory(chapter_01/problem_02)
 add_subdirectory(chapter_01/problem_03)
 add_subdirectory(chapter_01/problem_04)
+add_subdirectory(chapter_01/problem_05)
 add_subdirectory(chapter_01/problem_06)
+
