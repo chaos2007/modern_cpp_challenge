@@ -74,4 +74,15 @@ std::list<std::pair<int, int> > get_sexy_prime(int limit)
     return result;
 }
 
+std::pair<bool, int> get_abundance(int number)
+{
+    return std::make_pair(false, 0);
+}
+
+std::list<std::pair<int, int> > get_abundant_pairs(int limit)
+{
+    std::list<std::pair<int, int> > result;
+    return result;
+}
+
 #endif //MY_MATH_LIB_H_
