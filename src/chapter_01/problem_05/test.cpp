@@ -1,9 +1,8 @@
-#define CATCH_CONFIG_MAIN
 #include "catch.hpp"
 #include "my_math_lib.h"
 #include <list>
 
-TEST_CASE( "is_prime works", "[sexy_prime]" ) {
+TEST_CASE( "is_prime works_2", "[sexy_prime]" ) {
     std::list<std::pair<int,int> > expected = {
             std::make_pair(5, 11)
     };
